@@ -1,0 +1,19 @@
+{
+  "name": "chatbox",
+  "version": "1.0.0",
+  "description": "Simple Chat App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradparksw/Chatbox.git"
+  },
+  "author": "Sang Won Park",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradparksw/Chatbox/issues"
+  },
+  "homepage": "https://github.com/bradparksw/Chatbox#readme"
+}
