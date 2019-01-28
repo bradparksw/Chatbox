@@ -33,16 +33,15 @@ io.sockets.on('connection', function(socket){
     
     // Send Message
     socket.on('send message', function(data){
-        io.sockets.emit('new message', {msg: data});
+        io.sockets.emit('new message', {msg: data, user:socket.username});
     });
 
-    // Dsconnect
-    socket.on('disconnect', function(){
+    // Disconnect User
+    socket.on('disconnect', function(data){
       if(!socket.username){
         return;
       }
-
-      username.splice(usernames.indexOf(socket.username), 1);
+      usernames.splice(usernames.indexOf(socket.username), 1);
       updateUsernames();
     });
 });

@@ -12,7 +12,7 @@
             margin:0 auto;
         }
 
-        #chatwindow{
+        #chatWindow{
             height:300px;
         }
 
@@ -122,9 +122,9 @@
                 $message.val('');
             });
 
-                socket.on('new message', function(data){
-                    $chat.append(data.msg+'<br>');
-                });
+            socket.on('new message', function(data){
+                $chat.append('<strong>' +data.user+ '</strong>: ' + data.msg+'<br>');
+            });
         });
         </script>
 </body>
