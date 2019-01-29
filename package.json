@@ -13,8 +13,9 @@
   "author": "Sang Won Park",
   "license": "ISC",
   "dependencies": {
-    "socket.io": "*",
-    "express": "*"
+    "express": "*",
+    "gh-pages": "^2.0.1",
+    "socket.io": "*"
   },
   "bugs": {
     "url": "https://github.com/bradparksw/Chatbox/issues"

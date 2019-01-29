@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ChatIO</title>
+    <title>Live Chat</title>
     <style>
         body{
             background:#f9f9f9;
@@ -58,7 +58,7 @@
 <body>
     <div id="container">
         <div id="namesWrapper">
-            <h2>ChatIO</h2>
+            <h2>Live Chat</h2>
             <p>Create Username:</p>
             <div id= "error"></div>
             <form id = "usernameForm">
@@ -68,7 +68,7 @@
         </div>
         
         <div id="mainWrapper">
-            <h2>ChatIO</h2>
+            <h2>Live Chat</h2>
             <div id="chatWrapper">
                 <div id="chatWindow"></div>
                 <form id = "messageForm">
@@ -103,7 +103,7 @@
                         $('#namesWrapper').hide();
                         $('#mainWrapper').show();
                     } else {
-                        $error.html('Username is taken. Choose another');
+                        $error.html('Username is already taken. Please choose another name.');
                     }
                 });
             });
